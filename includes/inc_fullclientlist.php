@@ -1,4 +1,5 @@
 <h4>Our Clients</h4>
+<p><a href="/add_client.php">Add Client</a></p>
 <table cellspacing="0" class="clickable">
 	<tr>
 		<th>Company</th>

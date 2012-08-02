@@ -44,6 +44,7 @@ if (mysql_num_rows($client_search) != 1){
 	</form>
 
 	<h3>Projects</h3>
+	<p><a href="/add_project.php?client=<?php echo $_GET['id']; ?>">Add Project</a></p>
 	<p>These are the projects the client currently has with us. It'll show the status, name, etc.. Click to view more information.</p>
 	<?php
 
