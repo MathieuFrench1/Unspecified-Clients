@@ -8,8 +8,9 @@
 	$email = $_POST['email'];
 	$phone = $_POST['phone'];
 	$website = $_POST['website'];
+	if (isset($_POST['active'])){ $active = 1; } else {  $active = 0; } 
 
-	mysql_query("UPDATE `clients` SET `company` = '$company', `contact`='$contact', `email`='$email', `phone`='$phone', `website`='$website' WHERE `id`='$id' LIMIT 1") or die(mysql_error());
+	mysql_query("UPDATE `clients` SET `company` = '$company', `contact`='$contact', `email`='$email', `phone`='$phone', `website`='$website', `active`='$active' WHERE `id`='$id' LIMIT 1") or die(mysql_error());
 
 	$_SESSION['notice'] = "Client saved successfully.";
 

@@ -4,12 +4,20 @@ session_start();
 
 // Database configuration
 
-//$con = mysql_connect("localhost", "unspecif_wp", "XBl[V{v$J;JT");
-$con = mysql_connect("localhost", "root", "");
+if ($_SERVER['REMOTE_ADDR'] != "127.0.0.1"){
+	$con = mysql_connect("localhost", "unspecif_admin", "adminuser1234!");
+} else {
+	$con = mysql_connect("localhost", "root", "");
+}
 
 if ($con){
 	//$db = mysql_select_db("unspecif_internal");
-	$db = mysql_select_db("bytefish");
+	
+	if ($_SERVER['REMOTE_ADDR'] != "127.0.0.1"){
+		$db = mysql_select_db("unspecif_internal");
+	} else {
+		$db = mysql_select_db("bytefish");
+	}
 }
 
 if (!isset($_SESSION['user'])){

@@ -12,7 +12,7 @@
 		while ($c = mysql_fetch_array($clients)){
 			?>
 
-			<tr onclick="document.location.href = '/client.php?id=<?php echo $c['id']; ?>'">
+			<tr onclick="document.location.href = '/client.php?id=<?php echo $c['id']; ?>'" <?php if ($c['active'] == 0){ echo "class=\"inactive\""; } ?>>
 				<td><?php if ($c['company'] != ""){ echo $c['company']; } else { echo "n/a"; } ?></td>
 				<td><?php echo $c['contact']; ?></td>
 				<td><?php echo $c['email']; ?></td>

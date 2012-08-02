@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title><?php if (isset($title)) { echo $title." - "; } ?>byteFish</title>
+		<title><?php if (isset($title)) { echo $title." - "; } ?>Unspecified</title>
 		<link rel="stylesheet" type="text/css" href="style.css" />
 		<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
 		<link rel="apple-touch-icon" href="img/icon.png"/> 

@@ -3,9 +3,9 @@
 <?php
 
 if (isset($_GET['id'])){
-	include ('/includes/inc_individualclientinfo.php');
+	include ('includes/inc_individualclientinfo.php');
 } else {
-	include ('/includes/inc_fullclientlist.php');
+	include ('includes/inc_fullclientlist.php');
 }
 
 ?>

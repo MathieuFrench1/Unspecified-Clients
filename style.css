@@ -19,4 +19,6 @@ table.alternating tr:nth-child(odd) { background: #DDD; }
 table.clickable tr:first-child:hover { background: #FFF; cursor: inherit; }
 table.clickable tr:hover { background: #CCC; cursor: pointer; }
 
+table tr.inactive { text-decoration: line-through;}
+
 .notice { padding: 10px; background: #CC00FF; margin-bottom: 10px; }
