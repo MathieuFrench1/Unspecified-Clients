@@ -1,0 +1,22 @@
+body {
+	color: #333;
+	font-family: "Arial",Tahoma,Verdana;
+}
+
+p, h1, h2, h3, h4, table { padding: 0; margin: 0 0 10px 0; }
+
+a { color: inherit; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+table { font-size: 12px; width: 100%; }
+
+table tr td, table tr th { text-align: left; padding: 5px; }
+table tr:nth-child(even) { background: #EFEFEF; }
+
+table.alternating tr:nth-child(even) { background: #CCC; }
+table.alternating tr:nth-child(odd) { background: #DDD; }
+
+table.clickable tr:first-child:hover { background: #FFF; cursor: inherit; }
+table.clickable tr:hover { background: #CCC; cursor: pointer; }
+
+.notice { padding: 10px; background: #CC00FF; margin-bottom: 10px; }
