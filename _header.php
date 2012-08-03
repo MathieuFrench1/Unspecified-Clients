@@ -19,7 +19,7 @@
 		<div id="wrapper">
 			<?php if (isset($_SESSION['name'])){ ?>
 				<h2>Oh, hai <?php echo $_SESSION['name']; ?></h2>
-				<h4>Menu: <a href="/client.php">Clients</a> - <a href="/">Home</a> - <a href="/logout.php">Logout</a></h4>
+				<h4>Menu: <a href="/client.php">Clients</a> - <a href="/project.php">Projects</a> - <a href="/">Home</a> - <a href="/logout.php">Logout</a></h4>
 			<?php } else { ?>
 				<h2>Login</h2>
 			<?php } ?>
